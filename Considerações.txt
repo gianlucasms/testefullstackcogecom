@@ -1,0 +1,3 @@
+Olá, infelizmente não consegui finalizar o projeto a tempo, fiz todo o backend, e fiz a metade de um front.
+
+No backend para rodar é somente alterar a string de conexão, e rodar os migrations.
