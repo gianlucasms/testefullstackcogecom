@@ -1,3 +1,9 @@
-Olá, infelizmente não consegui finalizar o projeto a tempo, fiz todo o backend, e fiz a metade de um front.
+Olá,
 
-No backend para rodar é somente alterar a string de conexão, e rodar os migrations.
+Espero que esta mensagem o encontre bem. Gostaria de compartilhar minha experiência no teste técnico que realizei recentemente. O projeto em questão envolvia o desenvolvimento de um backend, no qual tive sucesso ao finalizar completamente, utilizando o Entity Framework Core e Fluent API para garantir uma implementação robusta e eficiente neste desafio.
+
+No entanto, no lado do frontend, que foi construído em Angular, enfrentei alguns desafios. Consegui criar as bases do projeto, incluindo duas telas iniciais. No entanto, admito que não consegui concluir a integração com o backend, o que resultou na impossibilidade de consumir a API de maneira satisfatória.
+
+Reconheço a importância de uma integração eficiente entre o frontend e o backend para o pleno funcionamento do sistema. Mesmo que não tenha atingido o resultado desejado nesta etapa, estou comprometido em aprender com essa experiência e aprimorar minhas habilidades para alcançar melhores resultados no futuro.
+
+Agradeço pela oportunidade de participar do teste técnico e estou à disposição para fornecer mais detalhes ou discutir maneiras de melhorar meu desempenho em futuras oportunidades.
