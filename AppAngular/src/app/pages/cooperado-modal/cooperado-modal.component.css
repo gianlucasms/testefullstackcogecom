@@ -1,0 +1,18 @@
+.masterDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudoDiv {
+    width: 500px;
+    margin-top: 50px;
+}
+
+.modal-header {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}

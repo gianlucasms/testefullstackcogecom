@@ -1,0 +1,28 @@
+<div class="container">
+    <h3>Lista de Cooperados</h3>
+    <button routerLink="/cadastrar-cooperado" class="btn btn-success">Cadastrar Cooperado</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Telefone</th>
+                <th>Email</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let cooperado of cooperados">
+                <td>{{ cooperado.id }}</td>
+                <td>{{ cooperado.nome }}</td>
+                <td>{{ cooperado.telefone }}</td>
+                <td>{{ cooperado.email }}</td>
+                <td>
+                    <button (click)="editarCooperado(cooperado.id)" class="btn btn-info">Editar</button>
+                    <button (click)="removerCooperado(cooperado.id)" class="btn btn-danger">Remover</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

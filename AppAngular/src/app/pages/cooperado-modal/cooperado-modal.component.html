@@ -1,0 +1,68 @@
+<div class="masterDiv">
+    <div class="conteudoDiv">
+        <div class="modal-header">
+            <h4 class="modal-title">Cadastrar Cooperado</h4>
+            <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="cooperadoForm">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" class="form-control" id="nome" formControlName="nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="nome">Telefone:</label>
+                    <input type="text" class="form-control" id="telefone" formControlName="telefone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="nome">Email:</label>
+                    <input type="text" class="form-control" id="email" formControlName="email" required>
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="adicionarUnidadeConsumidora"
+                        formControlName="adicionarUnidadeConsumidora" (change)="toggleUnidadeConsumidora()">
+                    <label class="form-check-label" for="adicionarUnidadeConsumidora">Adicionar Unidade
+                        Consumidora</label>
+                </div>
+
+                <div *ngIf="adicionarUnidadeConsumidora">
+                    <div class="form-group">
+                        <label for="concessionaria">Concessionária</label>
+                        <input type="text" class="form-control" id="concessionaria" formControlName="concessionaria">
+                    </div>
+                    <div class="form-group">
+                        <label for="cep">CEP</label>
+                        <input type="text" class="form-control" id="cep" formControlName="cep">
+                    </div>
+                    <div class="form-group">
+                        <label for="cep">Logradouro</label>
+                        <input type="text" class="form-control" id="Logradouro" formControlName="Logradouro">
+                    </div>
+                    <div class="form-group">
+                        <label for="cep">Bairro</label>
+                        <input type="text" class="form-control" id="Bairro" formControlName="Bairro">
+                    </div>
+                    <div class="form-group">
+                        <label for="cep">Localidade</label>
+                        <input type="text" class="form-control" id="Localidade" formControlName="Localidade">
+                    </div>
+                    <div class="form-group">
+                        <label for="cep">UF</label>
+                        <input type="text" class="form-control" id="UF" formControlName="UF">
+                    </div>
+                    <div class="form-group">
+                        <label for="cep">Numero</label>
+                        <input type="text" class="form-control" id="Numero" formControlName="Numero">
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-primary" (click)="cadastrarCooperado()">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+</div>
